@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game - By Ofer</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="screen active" id="start-screen">
+            <h1 class="headline">Quiz Time!</h1>
+            <p class="text-subheadline">Test your knowledge with this fun quiz!</p>
+            <button id="start-btn">Start Quiz Now!</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div id="quiz-info">
+                <p>Question <span id="current-question">1</span> of <span id="total-questions">8</span></p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+            <h2 id="question-text">Question will appear here</h2>
+            <div id="answers-container" class="answers-container">
+                <button class="answer-btn">Answer 1</button>
+                <button class="answer-btn">Answer 2</button>
+                <button class="answer-btn">Answer 3</button>
+                <button class="answer-btn">Answer 4</button>
+            </div>
+            <div class="progress-bar">
+                <div id="progress">
+                    <span id="progress-text">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="result-screen">
+            <h1>Quiz Results</h1>
+            <div class="result-info">
+                <p>Your Score: <span id="final-score">0</span> Out Of <span id="max-score">8</span></p>
+                <div id="result-message">Great Job!</div>
+                <button id="restart-button">Restart Quiz</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
