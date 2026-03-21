@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="side-bar">
+            <h1>Meme Generator</h1>
+
+            <div class="upload-container">
+                <input type="file" id="image-upload" accept="image/*">
+                <label for="image-upload">📁 Upload Image</label>
+            </div>
+
+            <div class="templates-container">
+                <h3>Templates</h3>
+                <div class="templates-grid">
+                    <img src="https://i.imgflip.com/1bij.jpg" alt="One Does Not Simply" class="template-img">
+                    <img src="https://i.imgflip.com/4t0m5.jpg" alt="Drake" class="template-img">
+                    <img src="https://i.imgflip.com/1otk96.jpg" alt="Distracted Boyfriend" class="template-img">
+                    <img src="https://i.imgflip.com/2hgfw.jpg" alt="Two Buttons" class="template-img">
+                </div>
+            </div>
+
+            <input type="text" id="top-text" placeholder="Top Text">
+            <input type="text" id="bottom-text" placeholder="Bottom Text">
+
+            <label>Text Color</label>
+            <input type="color" id="text-color" value="#ffffff">
+
+            <button id="generate-btn">Generate Meme</button>
+            <button id="download-btn">Download Meme</button>
+            <button id="reset-btn">Reset</button>
+        </aside>
+
+        <main class="canvas-area">
+            <canvas id="meme-canvas"></canvas>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
